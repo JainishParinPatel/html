@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#"  method="post">
+        <table>
+            <tr>
+                <td><label for="">name:</label></td>
+                <!--<input type="text" name="name" id="name" id="name minlength="2" maxlength="10">-->
+                <td><input type="text" name="name" id="name" pattern="[A-Za-z]{2,10}" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Age:</label></td>
+                <td><input type="number" name="no" id="no" min="18" max="60" required></td>
+            </tr>
+            <tr>
+                <td><label for="">email:</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td> <label for="">password:</label></td>
+                <td> <input type="password" name="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="">range:</label></td>
+                <td><input type="range" name="rg" id="rg"></td>
+            </tr>
+            <tr>
+                <td><label for="">color:</label></td>
+                <td><input type="color" name="clr" id="clr"></td>
+            </tr>
+            <tr>
+                <td><label for="">talephone:</label></td>
+                <td><input type="tel" name="tel" id="tel" pattern="[0-9]{10,12}"></td>
+            </tr>
+            <tr>
+                <td><label for="">gender:</label></td>
+                <td><input type="radio" name="g1" id="g1">male
+                <input type="range" name="g1" id="g1">female</td>
+            </tr>
+            <tr>
+                <td><label for="">qualification</label></td>
+                <td><input type="checkbox" name="g1" id="" value="10">10th
+                <input type="checkbox" name="g1" id="" value="12">12th
+                <input type="checkbox" name="g1" id="" value="bca">BCA
+                <input type="checkbox" name="g1" id="" value="mca">MCA</td>
+            </tr>
+            <tr>
+                <td><label for="">country</label></td>
+                <td><select name="country" id="">
+                <option value="">India</option>
+                <option value="">usa</option>
+                <option value="">uk</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="">address</label></td>
+                <td><textarea name="address" id="" rows="10" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="button">
+                <input type="submit" value="submit">
+                <input type="reset" value="clear"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
